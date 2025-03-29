@@ -4,6 +4,7 @@
   import { readBody, readHeader } from "@/utils/data_prepare";
   import { onMounted, ref } from "vue";
   import ShowTreeMap from "@/components/usecases/ShowTreeMap.vue"
+  import M_DescriptiveStatistic from "@/components/molecules/M_DescriptiveStatistic.vue"
 
   const header_dataset = ref([])
   const body_dataset = ref([])
@@ -68,7 +69,29 @@
       <div class="accordion-item">
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <A_TextComponent second_title="Descriptive Statistic" />
-          
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Age"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Sleep Duration"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Quality of Sleep"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Physical Activity Level"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Stress Level"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Heart Rate"/>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <M_DescriptiveStatistic target_col="Daily Steps"/>
+            </div>
+          </div>
         </div>
       </div>
 
